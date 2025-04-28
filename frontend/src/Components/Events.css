@@ -1,0 +1,213 @@
+/* Event page layout */
+.events-container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding: 4px;
+}
+
+
+/* Event card styling */
+.event-card {
+  background: rgb(204, 207, 244);
+  border-radius: 10px;
+  width: 300px;
+  color: black;
+  padding: 3rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin: 0.3rem 0;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: darkblue;
+}
+
+/* Custom styles for the registration dialog */
+.MuiDialog-paper {
+  width: 450px;
+  max-width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f4f4f9;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiDialogTitle-root {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.MuiDialogContent-root {
+  padding: 20px;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for the form fields */
+.MuiTextField-root {
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiTextField-root input {
+  padding: 12px;
+}
+
+.MuiTextField-root:hover {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling input labels */
+.MuiFormLabel-root {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Submit button styling */
+.MuiButton-root {
+  margin-top: 20px;
+  padding: 14px 20px;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  text-transform: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.MuiButton-root:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.MuiButton-root:active {
+  transform: translateY(1px);
+}
+
+/* Cancel button styling */
+.MuiDialogActions-root .MuiButton-root.MuiButton-textSecondary {
+  background-color: #e74c3c;
+  color: white;
+  margin-right: 15px;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.MuiDialogActions-root .MuiButton-root.MuiButton-textSecondary:hover {
+  background-color: #c0392b;
+}
+
+/* Styling for dialog actions (alignment) */
+.MuiDialogActions-root {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Border radius for form container */
+.MuiDialog-paper {
+  border-radius: 10px;
+}
+
+/* Focus effects for text fields */
+.MuiOutlinedInput-root.Mui-focused {
+  border-color: #3498db;
+}
+
+/* Enhancements to the overall form appearance */
+.MuiTextField-root .MuiOutlinedInput-root {
+  border-radius: 5px;
+  background-color: #f5f6fa;
+  padding: 10px;
+}
+
+/* Enhanced focus effects for input fields */
+.MuiOutlinedInput-root.Mui-focused {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Adding focus effect for labels */
+.MuiFormLabel-root.Mui-focused {
+  color: #3498db;
+}
+
+/* Adjusting dialog width for better responsiveness */
+.MuiDialog-paperWidthSm {
+  width: 480px;
+}
+
+/* Overall background of the dialog */
+.MuiDialogContent-root {
+  background-color: #f9f9f9;
+}
+
+/* General form label customization */
+.MuiFormLabel-root {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #34495e;
+  letter-spacing: 0.5px;
+}
+
+/* Adding a shadow effect to the buttons */
+.MuiButton-root.MuiButton-contained {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Dialog title background */
+.MuiDialogTitle-root {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
