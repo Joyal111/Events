@@ -97,17 +97,20 @@ const AdminEvents = () => {
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{editingEvent ? "Edit Event" : "Add New Event"}</DialogTitle>
         <DialogContent>
-          {["title", "club", "date", "time", "venue", "description", "image"].map((field) => (
-            <TextField
-              key={field}
-              name={field}
-              label={field.charAt(0).toUpperCase() + field.slice(1)}
-              value={formData[field]}
-              onChange={handleChange}
-              fullWidth
-              margin="normal"
-            />
-          ))}
+        {["title", "club", "date", "time", "venue", "description", "image"].map((field) => (
+  <TextField
+    key={field}
+    name={field}
+    label={field.charAt(0).toUpperCase() + field.slice(1)}
+    type={field === "date" ? "date" : field === "time" ? "time" : "text"} // <-- THIS LINE
+    value={formData[field]}
+    onChange={handleChange}
+    fullWidth
+    margin="normal"
+    InputLabelProps={field === "date" || field === "time" ? { shrink: true } : {}}
+  />
+))}
+
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="secondary">Cancel</Button>
