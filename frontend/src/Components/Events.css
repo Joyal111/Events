@@ -1,17 +1,17 @@
 /* Event page layout */
 .events-container {
   display: flex;
-  gap: 4rem;
-  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 2rem; /* Add some space between the cards */
+  justify-content: center; /* Center the cards */
   padding: 4px;
 }
-
 
 /* Event card styling */
 .event-card {
   background: rgb(204, 207, 244);
   border-radius: 10px;
-  width: 300px;
+  width: 300px; /* Fixed width for each card */
   color: black;
   padding: 3rem;
   text-align: left;
@@ -210,4 +210,17 @@ form {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1024px) {
+  .event-card {
+    width: 45%; /* 2 cards per row on medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    width: 100%; /* 1 card per row on small screens */
+  }
 }
